@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,900&display=swap">
+    <link rel="icon" href="img/flowers.png" type="image/x-icon">
+    <title>Una Carta Especial</title>
+    <style>
+        /* Fuente y configuración general */
+        body {
+            background: url('https://www.transparenttextures.com/patterns/stardust.png'), black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 200vh;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            color: azure;
+            position: relative; /* Añadir esto para permitir posicionamiento absoluto en el botón */
+        }
+
+        /* Contenedor de la carta */
+        .letter-container {
+            background: rgba(0, 0, 0, 0.7); /* Fondo oscuro translúcido */
+            padding: 40px;
+            max-width: 600px;
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+            text-align: justify;
+            line-height: 1.7;
+            border: 1px solid #e2da92; /* Borde suave amarillo */
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: #ae7cff;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            color: #dcdcdc;
+        }
+
+        /* Resaltado sutil */
+        .highlight {
+            color: #fff0b9;
+            font-weight: 600;
+        }
+
+        /* Cita final */
+        .final-paragraph {
+            text-align: right;
+            font-style: italic;
+            margin-top: 30px;
+        }
+
+        /* Estilo responsivo para pantallas pequeñas */
+        @media screen and (max-width: 600px) {
+            .letter-container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 1.7rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+
+        /* Estilo para el botón de la carta */
+        #play-music {
+            background-color: #7a6d7427; /* Fondo rosado vibrante */
+            border: none;
+            padding: 10px 20px;
+            font-size: 19px;
+            cursor: pointer;
+            border-radius: 20px; /* Bordes redondeados */
+            color: white;
+            transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            text-shadow: 0 0 8px #fff;
+            position: absolute; /* Posición absoluta */
+            top: 60px; /* Distancia desde la parte superior */
+            left: 60px; /* Distancia desde la izquierda */
+            display: inline-block;
+        }
+
+        /* Efecto hover para el botón de la carta */
+        #play-music:hover {
+            background-color: #ad1457; /* Cambia a un tono más oscuro de rosa */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra para darle un efecto flotante */
+        }
+
+        /* Estilo responsivo para el botón de la carta */
+        @media screen and (max-width: 600px) {
+            #play-music {
+                font-size: 0.8rem; /* Ajusta el tamaño del texto para pantallas pequeñas */
+                padding: 10px 20px; /* Reduce el padding en pantallas pequeñas */
+            }
+        }
+        /* Configuración para el contenedor de los botones */
+.button-container {
+    display: flex;
+    gap: 20px; /* Espacio entre los botones */
+    justify-content: center; /* Centra los botones horizontalmente */
+    align-items: center; /* Alinea los botones verticalmente */
+    margin-top: 20px; /* Espacio superior */
+}
+
+/* Estilo para los botones */
+.button button {
+    background-color: #e91e63; /* Fondo rosa vibrante */
+    border: none;
+    padding: 10px 20px;
+    font-size: 19px;
+    cursor: pointer;
+    border-radius: 20px;
+    color: white;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-shadow: 0 0 8px #fff;
+}
+
+/* Cambios de estilo al hacer hover sobre el botón */
+.button button:hover {
+    background-color: #894aad; /* Cambia a púrpura en hover */
+    box-shadow: 0 0 10px #e491e7, 0 0 20px #de5bff, 0 0 30px #f1ebb0; /* Resplandor púrpura y amarillo */
+}
+
+/* Estilo para el enlace dentro del botón */
+.button button a {
+    text-decoration: none;
+    color: inherit; /* El enlace toma el color blanco del botón */
+}
+    </style>
+</head>
+<body>
+    <button id="play-music">Ascoltare</button> <!-- Botón para reproducir la música -->
+    <div class="letter-container">
+        <h1>MIA AMORE</h1>
+        <p>
+            Hoy celebramos el <span class="highlight">Día de Amor y Amistad</span>, y además de ser mi amor, <span class="highlight">fuiste y sigues siendo mi mejor amiga</span>. 🌻 En unos días cumpliremos nuestro primer mes juntos como novios, pero desde antes ya tenía la fortuna de compartir contigo una amistad única.
+        </p>
+        <p>
+            Este último mes ha sido un recordatorio constante de lo afortunado que soy de tenerte a mi lado. <span class="highlight">Cada día que pasa, descubro nuevas razones para amarte</span>, para admirarte y para agradecer por todo lo que compartimos.
+        </p>
+        <p>
+            Las flores amarillas, esas que simbolizan la felicidad y la esperanza, me recuerdan a ti. Tú eres mi flor amarilla, la que llena mi vida de luz y alegría en medio de cualquier tormenta.
+        </p>
+        <p>
+            Tu presencia me ha dado esa sensación de paz que tanto necesitaba, y no hay palabras suficientes para expresar lo que siento por ti, aunque intento ponerlo en cada gesto, en cada mirada, y en cada palabra que te dedico.
+        </p>
+        <p>
+            Este mes ha sido solo el comienzo de nuestra historia. Sé que, como esas flores que se abren al sol, nuestra relación solo seguirá creciendo y floreciendo con el tiempo.
+        </p>
+        <p>
+            Estoy emocionado por todo lo que nos espera juntos, por cada momento, cada risa y hasta por las dificultades que enfrentaremos, porque sé que contigo, todo es más llevadero.
+        </p>
+        <p>
+            Hoy celebro no solo el amor, sino también esa hermosa <span class="highlight">amistad que hemos cultivado a lo largo de estos años</span>, esa complicidad que nos hace únicos, como esos chistes que solo nosotros entendemos.
+        </p>
+        <p class="final-paragraph">
+            Te amo, mi inefable reina, y no puedo esperar a seguir compartiendo todos los días de mi vida contigo. 🌟
+        </p>
+        <p class="final-paragraph">
+            Con tutto il mio amore,<br>
+            <strong>la tua ingegner Hernando ❤️</strong>
+        </p>
+
+        <!-- Contenedor para los botones -->
+    <div class="button-container">
+        <div class="button">
+            <button>
+                <a href="FLORES.html">Il tuo regalo</a>
+            </button>
+        </div>
+    </div>
+    
+
+    <audio id="background-music" loop>
+        <source src="Kaleth.mp3" type="audio/mpeg">
+        Tu navegador no soporta la reproducción de audio.
+    </audio>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var audio = document.getElementById("background-music");
+            var playButton = document.getElementById("play-music");
+            // Inicialmente el volumen al 50%
+            audio.volume = 0.5;
+            // Reproducir el audio cuando se haga clic en el botón
+            playButton.addEventListener("click", function() {
+                audio.play();
+            });
+        });
+    </script>
+
+</body>
+</html>
